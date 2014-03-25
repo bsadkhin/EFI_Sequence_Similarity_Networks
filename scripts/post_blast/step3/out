@@ -1,0 +1,2 @@
+Can't locate GD/Graph/boxplot.pm in @INC (@INC contains: /u/sciteam/sadkhin/perl5/lib/perl5/x86_64-linux-thread-multi /u/sciteam/sadkhin/perl5/lib/perl5 /usr/lib/perl5/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/5.10.0 /usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/site_perl/5.10.0 /usr/lib/perl5/vendor_perl/5.10.0/x86_64-linux-thread-multi /usr/lib/perl5/vendor_perl/5.10.0 /usr/lib/perl5/vendor_perl .) at quart-align.pl line 2.
+BEGIN failed--compilation aborted at quart-align.pl line 2.
