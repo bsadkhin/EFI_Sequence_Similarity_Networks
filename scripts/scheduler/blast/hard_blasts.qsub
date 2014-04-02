@@ -1,0 +1,12 @@
+#!/bin/sh
+#PBS -j oe
+#PBS -l nodes=1600:ppn=32:xe
+#PBS -l walltime=24:00:00
+#PBS -q normal
+#PBS -N hard-blast
+
+cd $PBS_O_WORKDIR
+
+source /opt/modules/default/init/bash
+
+aprun -n 6400 -N 4 -d 8 ./scheduler.x job_list /u/sciteam/sadkhin/EFI/scheduler/blast_a_clan_part.pl > hard_log

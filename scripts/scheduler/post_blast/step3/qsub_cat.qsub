@@ -1,0 +1,12 @@
+#! /bin/sh
+#PBS -j oe
+#PBS -l nodes=5:ppn=32:xe
+#PBS -l walltime=6:00:00
+#PBS -q normal
+#PBS -N CatClans
+
+cd /u/sciteam/sadkhin/EFI/scheduler/
+
+source /opt/modules/default/init/bash
+
+aprun -n 160  -N 32 -d 1 ./scheduler.x catClans /u/sciteam/sadkhin/EFI/scripts/cat_complete_blast.pl  > cats_log

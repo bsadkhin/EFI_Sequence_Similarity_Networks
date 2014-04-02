@@ -1,0 +1,12 @@
+#! /bin/sh
+#PBS -j oe
+#PBS -l nodes=10:ppn=32:xe
+#PBS -l walltime=24:00:00
+#PBS -q normal
+#PBS -N quartile_align
+
+cd /u/sciteam/sadkhin/EFI/scheduler/
+
+source /opt/modules/default/init/bash
+
+aprun -n 160  -N 16 -d 2 ./scheduler.x catClans /u/sciteam/sadkhin/EFI/scripts/step-three_1.out.pl  > quartile_align.log
